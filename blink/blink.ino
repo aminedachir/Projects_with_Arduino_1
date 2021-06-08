@@ -1,13 +1,15 @@
+int led1 = 7;
+int led2 = 2;
 void setup() {
-  pinMode(7,OUTPUT);
-  pinMode(2,OUTPUT);
+  pinMode(led1,OUTPUT);
+  pinMode(led2,OUTPUT);
 }
 
 void loop() {
-  digitalWrite(7,1);
-  digitalWrite(2,0);
+  digitalWrite(led1,1);
+  digitalWrite(led2,0);
   delay(1000);
-  digitalWrite(7,0);
-  digitalWrite(2,1);
+  digitalWrite(led1,0);
+  digitalWrite(led2,1);
   delay(1000); 
 }
