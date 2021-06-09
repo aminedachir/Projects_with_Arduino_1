@@ -1,11 +1,11 @@
 const int led1 = 7;
 const int led2 = 2;
-int D = 100;
 void setup() {
   pinMode(led1,OUTPUT);
   pinMode(led2,OUTPUT);
 }
 void loop() {
+  static int D = 100;
   digitalWrite(led1,1);
   digitalWrite(led2,0);
   delay(D);
