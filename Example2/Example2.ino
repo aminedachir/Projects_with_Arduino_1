@@ -1,16 +1,19 @@
-const int led1 = 7;
-const int led2 = 2;
-void setup() {
-  pinMode(led1,OUTPUT);
-  pinMode(led2,OUTPUT);
+int led = 4;
+int sw = 8;
+int D1 = 1000;
+int D2 = 500;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(sw,INPUT_PULLUP);
 }
-void loop() {
-  static int D = 100;
-  digitalWrite(led1,1);
-  digitalWrite(led2,0);
+void loop()
+{
+  int D;
+  if (digitalRead(sw)==1){D = D1;}
+  else {D = D2;}
+  digitalWrite(led, HIGH);
   delay(D);
-  digitalWrite(led1,0);
-  digitalWrite(led2,1);
+  digitalWrite(led, LOW);
   delay(D);
-  D = D + 50; 
 }
