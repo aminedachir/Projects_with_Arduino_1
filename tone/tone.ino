@@ -8,7 +8,7 @@ void setup() {
   pinMode(c,INPUT_PULLUP);
 }
 void loop() {
-  if (digitalRead(a)== 0){tone(12,261,500);}
-  if (digitalRead(b)== 0){tone(12,289,500);}
-  if (digitalRead(c)== 0){tone(12,344,500);}
+  if (digitalRead(a)== 0){tone(12,261,500);delay(600);}
+  if (digitalRead(b)== 0){tone(12,289,500);delay(600);}
+  if (digitalRead(c)== 0){tone(12,344,500);delay(600);}
 }
