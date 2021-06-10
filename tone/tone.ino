@@ -10,7 +10,9 @@ void setup() {
   pinMode(sw,INPUT_PULLUP);
 }
 void loop() {
-  if (digitalRead(sw)== 1)
-  tone(spk,D1,500)
+  if (digitalRead(sw1)== 0){D = D1;}
+  else if (digitalRead(sw2)== 0){D = D2;}
+  else if (digitalRead(sw3)== 0){D = D3;}
+  tone(spk,D,500)
 
 }
