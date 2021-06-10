@@ -1,7 +1,7 @@
 int led = 4;
 int sw = 8;
 int D1 = 1000;
-int D2 = 500;
+int D2 = 400;
 void setup()
 {
   pinMode(led, OUTPUT);
