@@ -13,7 +13,7 @@ void setup() {
 }
 void loop() {
   int D;
-  if (digitalRead(sw1)== 0){D = D1;}
+  if (digitalRead(sw1)== 1){D = D1;}
   else if (digitalRead(sw2)== 0){D = D2;}
   else if (digitalRead(sw3)== 0){D = D3;}
   tone(spk,D,500);
