@@ -7,12 +7,14 @@ int D2 = 500;
 int D3 = 750;
 void setup() {
   pinMode(spk,OUTPUT);
-  pinMode(sw,INPUT_PULLUP);
+  pinMode(sw1,INPUT_PULLUP);
+  pinMode(sw2,INPUT_PULLUP);
+  pinMode(sw3,INPUT_PULLUP);
 }
 void loop() {
+  int D;
   if (digitalRead(sw1)== 0){D = D1;}
   else if (digitalRead(sw2)== 0){D = D2;}
   else if (digitalRead(sw3)== 0){D = D3;}
-  tone(spk,D,500)
-
+  tone(spk,D,500);
 }
